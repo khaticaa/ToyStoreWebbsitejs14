@@ -118,28 +118,48 @@ nav .nav-o .nav-r .bi-0-circle-fill {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .nav-o {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-l {
+    margin-top: 10px;
+    display: none;
+  }
+  .nav-r {
+    margin-top: 10px;
+  }
+  .nav-l li, .nav-r li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
 .banner {
   background-image: url("5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg");
   width: 100%;
-  min-height: 80vh;
+  padding: 100px 20px;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 .banner .banner-text {
-  width: 35%;
   background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   padding: 70px 50px;
   border-radius: 15px;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .banner .banner-text p {
   font-size: 18px;
@@ -158,4 +178,132 @@ nav .nav-o .nav-r .bi-0-circle-fill {
   color: #fff;
   font-size: 17px;
   cursor: pointer;
+}
+.banner i {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 80px 20px;
+  }
+  .banner-text h1 {
+    font-size: 28px;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+#section1 {
+  width: 100%;
+  padding: 100px 0px;
+}
+#section1 .s1-ortalama {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 30px;
+}
+#section1 .s1-ortalama .s1left {
+  width: 70%;
+  min-height: 200px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #ffc12c;
+  padding: 20px;
+  position: relative;
+}
+#section1 .s1-ortalama .s1left .img {
+  width: 220px;
+  position: absolute;
+  left: 20px;
+  top: -70px;
+}
+#section1 .s1-ortalama .s1left .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#section1 .s1-ortalama .s1left .s1leftinright {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 90px;
+}
+#section1 .s1-ortalama .s1left .s1leftinright h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#section1 .s1-ortalama .s1left .s1leftinright button {
+  padding: 15px 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #333;
+}
+#section1 .s1-ortalama .s1right {
+  width: 70%;
+  min-height: 200px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fb416b;
+  padding: 20px;
+  position: relative;
+}
+#section1 .s1-ortalama .s1right .s1rightinleft {
+  max-width: 400px;
+  padding-left: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#section1 .s1-ortalama .s1right .s1rightinleft h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+#section1 .s1-ortalama .s1right .s1rightinleft button {
+  padding: 15px 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #333;
+}
+#section1 .s1-ortalama .s1right .img {
+  width: 220px;
+  position: absolute;
+  right: 20px;
+  top: -50px;
+}
+#section1 .s1-ortalama .s1right .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

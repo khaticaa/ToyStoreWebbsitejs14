@@ -1,0 +1,79 @@
+.banner{
+    background-image: url("5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg");
+    width: 100%;
+    padding: 100px 20px;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+   .banner-text{
+    // width: 35%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 70px 50px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+   
+
+    p{
+        font-size: 18px;
+        color: #a5c926;
+        width: 100%;
+    }
+    h1{
+        font-size: 47px;
+        width: 100%;
+        
+    }
+
+    button{
+        padding: 20px 50px;
+        background-color: #a5c926;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 17px;
+        cursor: pointer;
+    }
+   }
+
+   i {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    color: gray;
+   }
+}
+
+
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 80px 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

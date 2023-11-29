@@ -128,50 +128,24 @@ nav{
     cursor: pointer;
 }
 
-.banner{
-    background-image: url("5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg");
-    width: 100%;
-    min-height: 80vh;
-    object-fit: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-   .banner-text{
-    width: 35%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    padding: 70px 50px;
-    border-radius: 15px;
-    text-align: center;
 
-    p{
-        font-size: 18px;
-        color: #a5c926;
-        width: 100%;
-    }
-    h1{
-        font-size: 47px;
-        width: 100%;
-        
+@media (max-width: 768px) {
+    .nav-o {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    button{
-        padding: 20px 50px;
-        background-color: #a5c926;
-        border: none;
-        border-radius: 20px;
-        color: #fff;
-        font-size: 17px;
-        cursor: pointer;
+    .nav-l {
+        margin-top: 10px;
+        display: none;
     }
-   }
-
-
-
+    .nav-r {
+        margin-top: 10px;
+    }
+    .nav-l li, .nav-r li {
+        margin: 0;
+        margin-bottom: 10px;
+    }
 }
+@import 'banner.scss';
+@import 's1.scss';
