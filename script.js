@@ -1,3 +1,9 @@
+const bannerText=document.querySelector('.banner-text')
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  bannerText.style.transform = 'scale(1)'
+})
+
 document.addEventListener("click", () => {
   const modal = document.getElementById("myModal");
   const modalTriggerElements = document.querySelectorAll(".nav-r li");
