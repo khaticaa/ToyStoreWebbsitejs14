@@ -4,6 +4,47 @@ document.addEventListener("DOMContentLoaded", () => {
   bannerText.style.transform = "scale(1)";
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  let navbarTop = document.querySelector(".navbar-top");
+  let nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", function () {
+    let scroll = window.scrollY || document.documentElement.scrollTop;
+
+    if (scroll > navbarTop.offsetHeight) {
+      navbarTop.classList.add("scrolling");
+      nav.classList.add("scrolling");
+    } else {
+      navbarTop.classList.remove("scrolling");
+      nav.classList.remove("scrolling");
+    }
+  });
+});
+
+let mouse = document.querySelector("#mouse");
+mouse.addEventListener("click", (e) => {
+  e.preventDefault();
+  section2.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  let nav = document.querySelector("nav");
+  let menuButton = document.getElementById("click");
+  let menu = document.querySelector(".menu");
+
+  menuButton.addEventListener("click", function () {
+    menu.classList.toggle("show-menu");
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 800) {
+      menu.classList.remove("show-menu");
+    }
+  });
+});
+
 document.addEventListener("click", () => {
   const modal = document.getElementById("myModal");
   const modalTriggerElements = document.querySelectorAll(".nav-r li");

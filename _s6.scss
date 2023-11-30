@@ -1,0 +1,115 @@
+#section6{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    .s6-o{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+           padding: 50px 0px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: #fff;
+
+        .s6left{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+
+           .s6icon{
+            i{
+                font-size: 40px;
+                border-radius: 50%;
+                padding: 15px;
+                font-size: 40px;
+                color: #f8f8f8;
+                background-color: #a5c926;
+            }
+           }
+
+           .s6text{
+            width: 60%;
+            h3{
+                font-size:30px;
+                font-weight: 100;
+            }
+            span{
+                color: #a5c926;
+            }
+           }
+
+        }
+
+        .s6right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            width: 40%;
+
+            .input{
+                input{
+                    border:none;
+                    border-radius: 20px;
+                    padding: 15px 75px;
+                    background-color: rgb(215, 209, 209);
+                    outline: none;
+                    font-size: 18px;
+
+                       &:focus {
+                    border: 2px solid #a5c926;
+                    
+                     }
+                 }
+                }
+
+                .btn{
+                    button{
+                     padding: 15px 33px;
+                    border-radius: 20px;
+                    color: #fff;
+                    border: none;
+                    background-color: #a5c926;
+                    font-size: 18px;
+                    text-align: center;
+                    cursor: pointer;
+                    scale: 0.85;
+                    transition: all 1s ease;
+                    &:hover {
+                        scale: 1;
+                        cursor: pointer;
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+      
+    @media screen and (max-width:960px) {
+        #section6{
+            .s6-o{
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+                .s6right{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                    width: 100%;
+                    .input{
+                        min-width:100%;
+                    }
+                }
+            }
+        }
+        
+    }
+    
